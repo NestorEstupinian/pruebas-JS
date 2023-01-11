@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable JS</title>
+</head>
+<body>
+    
+    <h1 >aprendiendo variables</h1>
+    <script>
+        //CURSO 1
+
+
+       /*no puedo comensar una variable
+       con numero o guin medio,
+       
+       pero si se puede empezar con
+       signo de dolar,guion bajo y letras*/
+
+       /*snake_case se puede utilizar para nombres
+       de archivos que es lo que lleva guiones 
+       bajos*/
+
+       /*UPPER_CASE este es para cuando se tienen
+       constante que no van a cambiar se puede utilizar y si tiene dos palabras el 
+       nombre se separan con 
+       un guion*/
+
+       /*UpperCamelCase cuandojeneremos clases
+       se utiliza este que es la letra inicial mayuscula*/
+
+       /*loverCamelCase este si la variable tiene una sola palabra
+       el nombre va en minuscula pero si tiene mas
+       apartir de la segunda se pone en mayuscula esto se utilizaen:
+       objetos
+       primitivos
+       funciones 
+       instancias*/
+
+
+    //CURSO 2 variables "var" y "let"
+        // "var" es una variable global 
+       var hola ="Hola mundo";
+       console.log(hola);
+
+       // "let" es una variable en blques
+       let mundo = "numeros enteros";
+       console.log(mundo);
+
+       console.log(window);
+       console.log(window.hola);
+       console.log(window.mundo);
+        
+       // ejemplo de la variable global
+       console.log("*************var*************");
+       var variable = "bloques";
+       console.log("variables de variables antes del bloque", 
+       variable);
+       {
+        var variable = "numero";
+        console.log("variable antes del bloque", variable);
+       }
+       console.log("variable despues del bloque", variable);
+
+
+
+       // ejemplo de la variable en bloque
+       console.log("*************let*************");
+       let variable2 = "bloques";
+       console.log("variables de variables antes del bloque", 
+       variable2);
+       {
+        let variable2 = "numero";
+        console.log("variable antes del bloque", variable2);
+       }
+       console.log("variable despues del bloque", variable2);
+
+
+
+
+
+
+
+
+
+       //CURSO 3 Constantes
+       /**este se utiliza solo si una 
+        variable no va a cambiar de valor*/
+
+       const PI = 3.1416
+
+    </script>
+</body>
+</html>
