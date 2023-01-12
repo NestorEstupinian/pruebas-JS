@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Variable JS</title>
+    <title>Cursos JS</title>
 </head>
 <body>
     
@@ -40,8 +40,9 @@
        instancias*/
 
 
-    //CURSO 2 variables "var" y "let"
-        // "var" es una variable global 
+        //CURSO 2 variables "var" y "let"
+
+       // "var" es una variable global 
        var hola ="Hola mundo";
        console.log(hola);
 
@@ -81,15 +82,37 @@
 
 
 
-
-
-
-
        //CURSO 3 Constantes
        /**este se utiliza solo si una 
         variable no va a cambiar de valor*/
+        /**Una variable const no se puede cambiar valor si es un primitivo
+         * pero si si lo es un compuesto
+        */
 
+        let a;
        const PI = 3.1416
+       //const NUEVE;
+       console.log(PI);
+       //PI = 3.15
+
+       a = "variable";
+       console.log(a)
+
+       const objeto = {
+        nombre:"Nestor",
+        edad: 19
+       }
+
+       const colores = ["Blanco", "negro", "rojo"]
+
+       console.log(objeto);
+       console.log(colores);
+
+       objeto.correo = "nestor@gmail.com";
+       colores.push("amarillo");
+
+       console.log(objeto);
+       console.log(colores);
 
     </script>
 </body>
