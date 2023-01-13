@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadena de texto/title>
+</head>
+<body>
+    <script>
+       //Curso 4 Cdena de texto
+       let nombre = "Nestor";
+       let apellido ="Estupinian";
+       let saludo = new String("Hola Mundo");
+       let lorem = "Lorem       ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+
+
+        console.log(nombre,apellido,saludo);
+       console.log(
+        nombre.length,
+        apellido.length,
+        saludo.length,
+        nombre.toUpperCase(), // este es para que escriba solo mayusculas
+        apellido.toLowerCase(), // este espara que escriba solo minusculas
+        lorem.includes("amet"), // este es para buscar una palabra en especifico
+        lorem.includes("Nestor"),
+        lorem,
+        lorem.trim(), //este quita los espacios en blanco
+        lorem.split(" ") //esto es para convertirlo en un arreglo
+        );
+    </script>
+</body>
+</html>

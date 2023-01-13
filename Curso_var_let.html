@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var y let</title>
+</head>
+<body>
+    <script> //CURSO 2 variables "var" y "let"
+
+        // "var" es una variable global 
+        var hola ="Hola mundo";
+        console.log(hola);
+ 
+        // "let" es una variable en blques
+        let mundo = "numeros enteros";
+        console.log(mundo);
+ 
+        console.log(window);
+        console.log(window.hola);
+        console.log(window.mundo);
+         
+        // ejemplo de la variable global
+        console.log("*************var*************");
+        var variable = "bloques";
+        console.log("variables de variables antes del bloque", 
+        variable);
+        {
+         var variable = "numero";
+         console.log("variable antes del bloque", variable);
+        }
+        console.log("variable despues del bloque", variable);
+ 
+ 
+ 
+        // ejemplo de la variable en bloque
+        console.log("*************let*************");
+        let variable2 = "bloques";
+        console.log("variables de variables antes del bloque", 
+        variable2);
+        {
+         let variable2 = "numero";
+         console.log("variable antes del bloque", variable2);
+        }
+        console.log("variable despues del bloque", variable2);
+ 
+ 
+ </script>
+</body>
+</html>
