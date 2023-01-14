@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <script>
+        //Curso de funciones
+
+        //Funcion declarada
+
+        //Declaracion de funcion
+        function estorEsUnaFuncion(){
+            console.log("Uno");
+            console.log("Dos");
+            console.log("Tres");
+        }
+
+        //invocacion de funcion
+
+        /*estorEsUnaFuncion();
+        estorEsUnaFuncion();
+        estorEsUnaFuncion();
+        estorEsUnaFuncion();
+        estorEsUnaFuncion();*/
+
+        function unaFuncionQueDevuelveValor(){
+            console.log("Uno");
+            return 19;
+            console.log("Dos");
+            console.log("Tres");
+            return "La funcion ha retornado una cadena de texto";
+        }
+
+        //let valorDeFuncion = unaFuncionQueDevuelveValor();
+
+        //console.log(valorDeFuncion)
+
+        function saludar(nombre = "Desconocido", edad= 0) {
+            console.log(`Hola mi nombre es ${nombre} y tengo ${edad}`);
+        }
+        
+        //saludar("Nestor",19);
+        //saludar();
+
+        //Funcion declarada VS funcion expresadas
+        funcionDeclarada();
+
+        function funcionDeclarada(){
+            console.log("Esto es una funcion declarada puede invicarse en cualquier parte de nuestro codigo incluso antes de que la funcion sea declarada");
+        }
+
+        funcionDeclarada();
+
+        //funcionExpresada();
+        //Funcion anonima
+        const funcionExpresada = function(){
+        console.log("esto es una funcion expresada es decir una funcion que se le ha asignado como valor a una variable si invocamos esta funcion antes de su definicion JS nos dira`Cannot access 'funcionExpresada' before initialization`")
+        }
+
+        funcionExpresada();
+    </script>
+</body>
+</html>
