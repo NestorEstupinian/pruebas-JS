@@ -9,8 +9,62 @@
 <body>
     <script>
         //curso de Objetos
+        //Cuando dse trabaja con objetos casi siempre es mejor trabajar con const
 
-        
+        let a = String("Hola");
+        //console.log(a);
+
+        const b = {}
+        console.log(b);
+
+        const c = new Object();
+        console.log(c);
+
+        //ejemplo de objeto
+        /*Dentro de un objeto a las variables se les va allamar
+        atributos/propiedades y a las funciones se les llama metodos*/
+
+        const nestor = {
+            nombre: "Nestor",
+            apellido: "Estupinian",
+            edad: 19,
+            pasatiempos: ["Ve peliculas", "Hacer ejercicio"],
+            soltero: true,
+            contacto:{
+                Correo:"nestor@gmail.com",
+                twitter: "@nestor12",
+                movil: "67452314"
+            },
+            saludar:function () {
+               console.log(`Hola :)`)
+            },
+            decirMiNombre:function(){
+                console.log(`Hola me llamo ${this.nombre} ${this.apellido} y tengo ${this.edad} años y me puedes seguir como ${this.contacto.twitter} en twitter`);
+            }
+        }
+
+        console.log(nestor);
+        console.log(nestor["nombre"]);
+        console.log(nestor["apellido"]);
+        console.log(nestor.nombre);
+        console.log(nestor.apellido);
+        console.log(nestor.edad);
+        console.log(nestor.soltero);
+        console.log(nestor.pasatiempos);
+        console.log(nestor.pasatiempos[1]);
+        console.log(nestor.contacto);
+        console.log(nestor.contacto.twitter);
+        nestor.saludar();
+        nestor.decirMiNombre();
+
+
+        //con este metodo da lo que son las llaves
+        console.log(Object.keys(nestor));
+        //con este metodo da lo que son propiedades
+        console.log(Object.values(nestor));
+        //con este es saber si algun objeto tine propiedad
+        console.log(nestor.hasOwnProperty("nombre"));
+        console.log(nestor.hasOwnProperty("nacimiento"));
     </script>
     
 </body>
